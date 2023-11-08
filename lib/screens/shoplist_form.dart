@@ -125,7 +125,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
                               children: [
                                 Text('Nama: $_name'),
                                 Text('Price: $_price'),
-                                Text('Price: $_description')
+                                Text('Description: $_description')
                               ],
                             ),
                           ),
