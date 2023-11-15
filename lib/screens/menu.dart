@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_list/screens/shoplist_form.dart';
 import 'package:shopping_list/widgets/left_drawer.dart';
 import 'package:shopping_list/widgets/shop_card.dart';
+import 'package:shopping_list/screens/list_product.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
@@ -88,6 +89,9 @@ class ShopCard extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => const ShopFormPage(),
                 ));
+          } else if (item.name == "Lihat Produk") {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ProductPage()));
           }
         },
         child: Container(
